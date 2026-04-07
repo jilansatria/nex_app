@@ -1,27 +1,46 @@
-# NEX Project
+# NEX Backend
 
-Integrated ERP Solution for CPO Supply Chain.
+FastAPI backend for the NEX Project.
 
-## Prerequisites
-- **Flutter SDK**: [Install Flutter](https://flutter.dev/docs/get-started/install)
-- **Dart SDK**: Included with Flutter.
+## Setup
 
-## How to Run
-
-1.  **Open Terminal** in this folder.
-2.  **Install Dependencies**:
+1.  **Create a virtual environment:**
     ```bash
-    flutter pub get
+    python -m venv venv
+    .\venv\Scripts\activate
     ```
-3.  **Run the App**:
-    - For Web (Chrome):
-      ```bash
-      flutter run -d chrome
-      ```
-    - For Windows:
-      ```bash
-      flutter run -d windows
-      ```
 
-## Troubleshooting
-If you see "flutter is not recognized", you need to add the Flutter `bin` folder to your System PATH environment variable.
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Configure Environment:**
+    Create a `.env` file in the `nex_backend` directory (same level as `app` folder):
+    ```env
+    POSTGRES_USER=postgres
+    POSTGRES_PASSWORD=your_password
+    POSTGRES_SERVER=localhost
+    POSTGRES_DB=nex_db
+    SECRET_KEY=your_secret_key
+    ```
+    *Note: Ensure you have PostgreSQL installed and the database `nex_db` created.*
+
+4.  **Run the Server:**
+    ```bash
+    uvicorn app.main:app --reload
+    ```
+
+## API Documentation
+
+Once the server is running, visit:
+- **Swagger UI:** `http://127.0.0.1:8000/docs`
+- **Reocm:** `http://127.0.0.1:8000/redoc`
+
+## Project Structure
+
+- `app/main.py`: Entry point.
+- `app/core/`: Configuration and database connection.
+- `app/models/`: SQLAlchemy ORM models.
+- `app/schemas/`: Pydantic schemas.
+- `app/api/`: API endpoints.

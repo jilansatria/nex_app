@@ -1,0 +1,36 @@
+﻿--- DUMPING: app/models/__pycache__\approval.cpython-310.pyc ---
+Error parsing app/models/__pycache__\approval.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\attendance.cpython-310.pyc ---
+Error parsing app/models/__pycache__\attendance.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\audit_log.cpython-310.pyc ---
+Error parsing app/models/__pycache__\audit_log.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\budget.cpython-310.pyc ---
+Error parsing app/models/__pycache__\budget.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\common.cpython-310.pyc ---
+Error parsing app/models/__pycache__\common.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\estate.cpython-310.pyc ---
+Error parsing app/models/__pycache__\estate.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\finance.cpython-310.pyc ---
+Error parsing app/models/__pycache__\finance.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\inventory.cpython-310.pyc ---
+Error parsing app/models/__pycache__\inventory.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\logistics.cpython-310.pyc ---
+Error parsing app/models/__pycache__\logistics.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\mill.cpython-310.pyc ---
+Error parsing app/models/__pycache__\mill.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\procurement.cpython-310.pyc ---
+Error parsing app/models/__pycache__\procurement.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\product.cpython-310.pyc ---
+Error parsing app/models/__pycache__\product.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\production.cpython-310.pyc ---
+Error parsing app/models/__pycache__\production.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\sales.cpython-310.pyc ---
+Error parsing app/models/__pycache__\sales.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\sales_contract.cpython-310.pyc ---
+Error parsing app/models/__pycache__\sales_contract.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\sales_new.cpython-310.pyc ---
+Error parsing app/models/__pycache__\sales_new.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\user.cpython-310.pyc ---
+Error parsing app/models/__pycache__\user.cpython-310.pyc: bad marshal data (unknown type code)
+--- DUMPING: app/models/__pycache__\__init__.cpython-310.pyc ---
+Error parsing app/models/__pycache__\__init__.cpython-310.pyc: bad marshal data (unknown type code)

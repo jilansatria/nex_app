@@ -1,23 +1,19 @@
-FROM ghcr.io/cirruslabs/flutter:3.19.0 AS build
+FROM python:3.10-slim
 
 WORKDIR /app
 
-# Copy dependency definition to leverage cache
-COPY pubspec.* ./
-RUN flutter pub get
+# Install system dependencies (gcc for potential compilation, libpq for postgres)
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy source code
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-# Build for web
-RUN flutter build web --release
+EXPOSE 8000
 
-# Stage 2: Serve with Nginx
-FROM nginx:alpine
-
-# Copy built artifacts
-COPY --from=build /app/build/web /usr/share/nginx/html
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
